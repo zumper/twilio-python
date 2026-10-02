@@ -21,7 +21,10 @@ class Page(object):
         'total',
         'num_pages',
         'start',
-        'uri'
+        'uri',
+        # Zumper: SignalWire list responses gained these on 2026-10-02.
+        'filters',
+        'ignored_parameters',
     }
 
     def __init__(self, version, response):
